@@ -1,5 +1,5 @@
 /*********************************************************************
- *  0.  GLOBAL OVERRIDES / MACROS
+ *  0.  GLOBAL OVERRIDES / MACRO
  *********************************************************************/
 #define EI_CLASSIFIER_TFLITE_ARENA_SIZE  (128 * 1024)   // 128 kB arena
 
@@ -298,4 +298,5 @@ void loop() {
 
   client.publish(mqtt_topic, json.c_str());
   Serial.println(json);
+
 }
